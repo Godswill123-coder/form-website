@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>The type attribute in the <code>&lt;input&gt;</code> tag specifies the type of input control to display. Each input type serves a different purpose and can collect different kinds of data. Here's an explanation of the different type attribute values used inside the <code>&lt;input&gt;</code> tag:</p>
+
+    <h3>Text (<code>type="text"</code>):</h3>
+    <p>Renders a single-line text input field. Commonly used for collecting short textual data such as names, addresses, etc.</p>
+
+    <h3>Password (<code>type="password"</code>):</h3>
+    <p>Similar to text input but obscures the characters typed by the user (usually as asterisks or dots). Used for sensitive data like passwords to prevent others from seeing the entered characters.</p>
+
+    <h3>Email (<code>type="email"</code>):</h3>
+    <p>Validates that the input follows the email format (contains "@" and a valid domain name). Useful for collecting email addresses and ensuring they are entered correctly.</p>
+
+    <h3>Number (<code>type="number"</code>):</h3>
+    <p>Allows input of a numerical value. Can include additional attributes like min, max, and step to specify constraints and increment/decrement behavior.</p>
+
+    <h3>Checkbox (<code>type="checkbox"</code>):</h3>
+    <p>Renders a checkbox that users can check or uncheck. Typically used when there are multiple options, and users can select one or more of them.</p>
+
+    <h3>Radio (<code>type="radio"</code>):</h3>
+    <p>Represents a radio button, allowing users to select one option from a group of options. All radio buttons within the same name attribute form a mutually exclusive group.</p>
+
+    <h3>File (<code>type="file"</code>):</h3>
+    <p>Allows users to select files from their device for uploading. The accept attribute can specify the file types that can be uploaded.</p>
+
+    <h3>Submit (<code>type="submit"</code>):</h3>
+    <p>Renders a button that submits the form data to the server when clicked. Typically used for form submission.</p>
+
+    <h3>Button (<code>type="button"</code>):</h3>
+    <p>Renders a clickable button with custom behavior defined using JavaScript. Useful for triggering specific actions within the form.</p>
+
+    <h3>Reset (<code>type="reset"</code>):</h3>
+    <p>Renders a button that resets all form fields to their default values when clicked. Useful for clearing the form.</p>
+
+    <h3>Hidden (<code>type="hidden"</code>):</h3>
+    <p>Hides the input from the user interface but includes its value when the form is submitted. Often used to pass data that should not be visible or modified by the user.</p>
+
+    <h3>Date (<code>type="date"</code>):</h3>
+    <p>Allows users to select a date from a calendar picker. Useful for collecting dates.</p>
+
+    <h3>Time (<code>type="time"</code>):</h3>
+    <p>Allows users to input a time value. Typically used for scheduling or time-related inputs.</p>
+
+    <h3>Datetime-local (<code>type="datetime-local"</code>):</h3>
+    <p>Allows users to input a date and time value (without timezone information). Combines the functionality of date and time inputs.</p>
+
+    <h3>Month (<code>type="month"</code>):</h3>
+    <p>Allows users to input a month and year. Useful for selecting month/year combinations.</p>
+
+    <h3>Week (<code>type="week"</code>):</h3>
+    <p>Allows users to input a week and year. Typically used for scheduling or week-related inputs.</p>
+
+    <h3>Color (<code>type="color"</code>):</h3>
+    <p>Renders a color picker control. Allows users to select a color.</p>
+
+    <h3>Range (<code>type="range"</code>):</h3>
+    <p>Renders a slider control that allows users to select a numeric value from a range. Commonly used for selecting values within a predefined range.</p>
+
+    <h3>Search (<code>type="search"</code>):</h3>
+    <p>Renders a text input field optimized for search queries. Typically used in search forms.</p>
+
+    <h3>Tel (<code>type="tel"</code>):</h3>
+    <p>Renders a text input field optimized for entering telephone or contact numbers. Useful for collecting phone numbers.</p>
+
+    <p>Each input type serves a specific purpose and provides different functionalities, catering to various data input requirements in web forms.</p>
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    The type attribute in the <input> tag specifies the type of input control to display. Each input type serves a different purpose and can collect different kinds of data. Here's an explanation of the different type attribute values used inside the <input> tag:
+
+Text (type="text"):
+
+Renders a single-line text input field.
+Commonly used for collecting short textual data such as names, addresses, etc.
+Password (type="password"):
+
+Similar to text input but obscures the characters typed by the user (usually as asterisks or dots).
+Used for sensitive data like passwords to prevent others from seeing the entered characters.
+Email (type="email"):
+
+Validates that the input follows the email format (contains "@" and a valid domain name).
+Useful for collecting email addresses and ensuring they are entered correctly.
+Number (type="number"):
+
+Allows input of a numerical value.
+Can include additional attributes like min, max, and step to specify constraints and increment/decrement behavior.
+Checkbox (type="checkbox"):
+
+Renders a checkbox that users can check or uncheck.
+Typically used when there are multiple options, and users can select one or more of them.
+Radio (type="radio"):
+
+Represents a radio button, allowing users to select one option from a group of options.
+All radio buttons within the same name attribute form a mutually exclusive group.
+File (type="file"):
+
+Allows users to select files from their device for uploading.
+The accept attribute can specify the file types that can be uploaded.
+Submit (type="submit"):
+
+Renders a button that submits the form data to the server when clicked.
+Typically used for form submission.
+Button (type="button"):
+
+Renders a clickable button with custom behavior defined using JavaScript.
+Useful for triggering specific actions within the form.
+Reset (type="reset"):
+
+Renders a button that resets all form fields to their default values when clicked.
+Useful for clearing the form.
+Hidden (type="hidden"):
+
+Hides the input from the user interface but includes its value when the form is submitted.
+Often used to pass data that should not be visible or modified by the user.
+Date (type="date"):
+
+Allows users to select a date from a calendar picker.
+Useful for collecting dates.
+Time (type="time"):
+
+Allows users to input a time value.
+Typically used for scheduling or time-related inputs.
+Datetime-local (type="datetime-local"):
+
+Allows users to input a date and time value (without timezone information).
+Combines the functionality of date and time inputs.
+Month (type="month"):
+
+Allows users to input a month and year.
+Useful for selecting month/year combinations.
+Week (type="week"):
+
+Allows users to input a week and year.
+Typically used for scheduling or week-related inputs.
+Color (type="color"):
+
+Renders a color picker control.
+Allows users to select a color.
+Range (type="range"):
+
+Renders a slider control that allows users to select a numeric value from a range.
+Commonly used for selecting values within a predefined range.
+Search (type="search"):
+
+Renders a text input field optimized for search queries.
+Typically used in search forms.
+Tel (type="tel"):
+
+Renders a text input field optimized for entering telephone or contact numbers.
+Useful for collecting phone numbers.
+Each input type serves a specific purpose and provides different functionalities, catering to various data input requirements in web forms.
+</body>
+</html> -->

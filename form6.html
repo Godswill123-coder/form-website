@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: black;
+    }
+    h2 {
+        text-align: center;
+    }
+    form {
+        max-width: 500px;
+        margin: auto;
+    }
+    fieldset {
+        margin-bottom: 10px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #45a049;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="url"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="number"],
+    input[type="time"],
+    input[type="datetime-local"],
+    input[type="month"],
+    input[type="week"],
+    input[type="search"],
+    input[type="radio"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #cb1818;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    input[type="submit"],
+    input[type="reset"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+      background-color: #45a049;
+    }
+    input[type=text], button:hover {
+      width: 130px;
+      -webkit-transition: width 0.4s ease-in-out;
+      transition: width 0.4s ease-in-out
+    }
+    input[type=text]:focus {
+      width: 100%;
+    }
+</style>
+</head>
+<body>
+    <h2>All Type/Attribute Form</h2>
+
+    <form action="form_sub.html" method="post" class="col-1-3">
+
+    <fieldset>
+    <!--Text Input-->
+    <label for="username">Username:</label> 
+    <input type="text" id="username" name="username" placeholder="enter your username" required><br><br>
+
+    <!--Password Input-->
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password" placeholder="enter your password" required><br><br>
+
+    <!--Email Input-->
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" placeholder="example@gmail.com" required><br><br>
+
+    <!--Tel Input-->
+    <label for="phone">Phone No:</label>
+    <input type="tel" name="phone" id="phone" placeholder="contact...">
+    </fieldset><br>
+
+    <fieldset>
+    <!--Select Dropdown Input-->
+    <label for="country">Country:</label>
+    <select name="country" id="country">
+    <option value="canada">Canada</option>
+    <option value="usa">USA</option>
+    <option value="australia">Australia</option>
+    <option value="nigeria">Nigeria</option>
+    </select><br><br>
+
+    <!--Color Input-->
+    <label for="color">Favorite colour:</label>
+    <input type="color" name="color" id="color"><br><br>
+
+    <!--Date Input-->
+    <label for="date">Birthday</label>
+    <input type="date" name="date" id="date"><br><br>
+
+    <!--URL Input-->
+    <label for="url">Website</label>
+    <input type="url" name="website" id="website" placeholder="www.example.com"><br><br>
+
+    <!--Number Input-->
+    <label for="amount">Amount</label>
+    <input type="number" name="amount" id="$" placeholder="$"><br></br>
+
+    <!--Time Input-->
+    <label for="time">Event time</label>
+    <input type="time" name="event time" id="event time"><br><br>
+
+    <!-- Datetime-local Input -->
+    <label for="interview">Interview:</label>
+    <input type="datetime-local" id="interview" name="interview"><br><br>
+
+    <!-- Month Input -->
+    <label for="event_month">Event Month:</label>
+    <input type="month" id="event_month" name="event_month"><br><br>
+
+    <!-- Week Input -->
+    <label for="week">Week:</label>
+    <input type="week" id="week" name="week"><br><br>
+    </fieldset><br>
+
+    <fieldset>
+    <!-- Color Input -->
+    <label for="color">Favorite Color:</label>
+    <input type="color" id="color" name="color"><br><br>
+
+    <!-- Range Input -->
+    <label for="volume">Volume:</label>
+    <input type="range" id="volume" name="volume" min="0" max="100" step="1" value="50"><br><br>
+
+    <!-- Search Input -->
+    <label for="search">Search:</label>
+    <input type="search" id="search" name="search"><br><br>
+
+    <!--Radio Button Demo-->
+    <label for="date">Present day:
+    <input type="radio" name="day" value="Monday">Monday
+    <input type="radio" name="day" value="Tuesday">Tuesday
+    <input type="radio" name="day" value="Wednesday">Wednesday
+    <input type="radio" name="day" value="Thursday">Thursday
+    <input type="radio" name="day" value="Friday">Friday
+    </label> 
+    </fieldset><br>
+    
+    <!-- Textarea -->
+    <label for="comments">Comments:</label><br>
+    <textarea id="comments" name="comments" rows="7" cols="62">add your comment here...</textarea><br><br>
+
+    <!--Checkbox Input-->
+    <label for="checkbox">I Agree to the terms and condition:</label><br>
+    <input type="checkbox" id="checkbox" name="checkbox" required><br><br>
+
+    <!--Search Button-->
+    <label for="search">Search</label>
+    <input type="text" name="search" placeholder="search..."><br><br>
+    
+    <!--Submit Button-->
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+
+    </form>
+
+</body>
+</html>

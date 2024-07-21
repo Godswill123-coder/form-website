@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Input Types Form</title>
+</head>
+<body>
+
+<h2>All Input Types Form</h2>
+
+<form action="submit_form.php" method="post" autocomplete="on">
+
+  <!-- Text Input -->
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username" required><br><br>
+
+  <!-- Password Input -->
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" required><br><br>
+
+  <!-- Email Input -->
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required><br><br>
+
+  <!-- Number Input -->
+  <label for="quantity">Quantity:</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="10" step="1" value="1"><br><br>
+
+  <!-- Checkbox Input -->
+  <input type="checkbox" id="agree" name="agree" required>
+  <label for="agree">I Agree</label><br><br>
+
+  <!-- Radio Inputs -->
+  <label>Gender:</label><br>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br><br>
+
+  <!-- File Input -->
+  <label for="file">Upload File:</label>
+  <input type="file" id="file" name="file" accept=".pdf, .doc, .docx"><br><br>
+
+  <!-- Date Input -->
+  <label for="birthday">Birthday:</label>
+  <input type="date" id="birthday" name="birthday"><br><br>
+
+  <!-- Time Input -->
+  <label for="meeting_time">Meeting Time:</label>
+  <input type="time" id="meeting_time" name="meeting_time"><br><br>
+
+  <!-- Datetime-local Input -->
+  <label for="appointment">Appointment:</label>
+  <input type="datetime-local" id="appointment" name="appointment"><br><br>
+
+  <!-- Month Input -->
+  <label for="event_month">Event Month:</label>
+  <input type="month" id="event_month" name="event_month"><br><br>
+
+  <!-- Week Input -->
+  <label for="week">Week:</label>
+  <input type="week" id="week" name="week"><br><br>
+
+  <!-- Color Input -->
+  <label for="color">Favorite Color:</label>
+  <input type="color" id="color" name="color"><br><br>
+
+  <!-- Range Input -->
+  <label for="volume">Volume:</label>
+  <input type="range" id="volume" name="volume" min="0" max="100" step="1" value="50"><br><br>
+
+  <!-- Search Input -->
+  <label for="search">Search:</label>
+  <input type="search" id="search" name="search"><br><br>
+
+  <!-- Tel Input -->
+  <label for="phone">Phone:</label>
+  <input type="tel" id="phone" name="phone"><br><br>
+
+  <!-- Select Dropdown -->
+  <label for="country">Country:</label>
+  <select id="country" name="country">
+    <option value="USA">USA</option>
+    <option value="Canada">Canada</option>
+    <option value="UK">UK</option>
+    <option value="Australia">Australia</option>
+    <!-- Add more options as needed -->
+  </select><br><br>
+
+  <!-- Textarea -->
+  <label for="message">Message:</label><br>
+  <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+  <!-- Submit Button -->
+  <input type="submit" value="Submit">
+
+</form>
+
+</body>
+</html>
